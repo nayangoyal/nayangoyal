@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main()
+{
+    int a;
+    scanf("%d", &a);
+    int s=0;
+    while(a>0)
+    {
+      int e,b,c;  
+      scanf("%d %d %d\n", &e, &b, &c);
+      int q=(e+b+c);
+      if(q>=2)
+      {
+        s+=1;
+      }
+      a-=1;
+    }
+    printf("%d", s);
+      
+    return 0;
+}
+
